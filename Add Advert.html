@@ -4,7 +4,7 @@
     <title>Deepend - Dashboard</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
+    <meta name="description" content="Deepend - Admin Dashboard" />
     <meta name="author" content="Potenza Global Solutions" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- fontawesome Icon -->
@@ -14,11 +14,12 @@
     <!-- app favicon -->
     <link rel="shortcut icon" href="assets/img/deep.png">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- plugin stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors.css" />
     <!-- app style -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- chart -->
 </head>
 <body>
     <!-- begin app -->
@@ -228,7 +229,7 @@
                                     <ul aria-expanded="false">
                                         <li><a href="Order (Food).html">New Order</a> </li>
                                         <li><a href="Upload Product (Food).html">View Uploaded Product</a></li>
-                                        <li><a href="#">Upload Product</a></li>
+                                        <li><a href="Upload Food.html">Upload Product</a></li>
                                     </ul>
                                 </li>
                                 <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><img src="assets/img/Vectorrr.png" draggable="false"><span class="nav-title">Studio Booking</span></a>
@@ -238,7 +239,7 @@
                                 </li>
                                 <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><img src="assets/img/event.png" draggable="false"><span class="nav-title">Hotel Bookings</span></a>
                                     <ul aria-expanded="false">
-                                        <li><a href="Hotel-Booking.html">New Hotel Bookings</a></li>
+                                        <li><a href="New Booking.html">New Hotel Bookings</a></li>
                                         <li><a href="Hotel-Upload.html">Upload Hotel</a></li>
                                     </ul>
                                 </li>
@@ -266,7 +267,7 @@
                                 </li>
                                 <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><img src="assets/img/use.png" draggable="false"><span class="nav-title">Advert</span></a>
                                     <ul aria-expanded="false">
-                                        <li><a href="#">Add Advert</a></li>
+                                        <li><a href="Add Advert.html">Add Advert</a></li>
                                         <li><a href="#">View Advert</a></li>
                                     </ul>
                                 </li>
@@ -276,7 +277,7 @@
                                             <a href='View Raider.html'> View Disphatch Rider</a> 
                                         </li>
                                         <li> 
-                                            <a href='Add Raider.html'> Add Disphatch Rider</a> 
+                                            <a href='Add Raider.html'> Add Disphatch Rider</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -301,94 +302,101 @@
                                 <!-- begin page title -->
                                 <div class="d-block d-lg-flex flex-nowrap align-items-center">
                                     <div class="page-title mr-4 pr-4 border-right">
-                                        <h4 class="hey">Food (Upload Product)</h4>
+                                        <h4 class="hey">Hey! Hamzat</h4>
                                     </div>
                                 </div>
                                 <!-- end page title -->
                             </div>
                         </div>
                         <!-- begin row -->
-
-                        <!-- Upload section -->
+                        <!-- First section -->
                         <div class="row">
-                           <div class="col-lg-12">
-                            <div class="upload">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="sign">
-                                            <form class="sign-div">
-                                                <div class="row">
-                                                    <!--Username-->
-                                                    <div class="col-lg-12">
-                                                        <label>Food Name : </label>
-                                                        <div class="row">
-                                                            <div class="col-md-12 mb-3">
-                                                                <input type="text" name="food" class="input" required>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Username Ends-->
-                                                    <!--Password-->
-                                                    <div class="col-lg-12">
-                                                        <label>Description : </label>
-                                                        <div class="row">
-                                                            <div class="col-md-12 mb-3">
-                                                                <textarea required class="input" cols="20" rows="5"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <h4>
-                                                            Upload Room Photos :
-                                                        </h4>
-                                                        <input type="file" class="input"style="border: none;">
-                                                    </div>
-                                                    
-                                                    <!--Password-->
-                                                    <div class="col-md-12 mb-3">
-                                                        <button value="LogIn" style="background-color: #fff;border:  1px solid #000;color: #000;"> Cancel</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="sign">
-                                            <form class="sign-div">
-                                                <div class="row">
-                                                    <!--Username-->
-                                                    <div class="col-lg-12">
-                                                        <label>Price :  </label>
-                                                        <div class="row">
-                                                            <div class="col-md-12 mb-3">
-                                                                <input type="text" name="food" class="input" required>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Username Ends-->
-                                                    <!--Password-->
-                                                    <div class="col-lg-12">
-                                                        <label>Category :  </label>
-                                                        <div class="row">
-                                                            <div class="col-md-12 mb-3">
-                                                                <input type="text"  name="text" class="input" required>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--Password-->
-                                                    <div class="col-md-12 mb-3">
-                                                        <button  value="upload" > Upload Food</a></button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                        
+                            <div class="col-lg-12 section">
+                                <div class="section-left">
+                                  <h4 class="user-1">No. of Advert</h4>
+                                    <h5 class="user-2">12</h5>
+                                    <p class="user-3">User</p>
+                                    <div class="png">
+                                        <img src="assets/img/Vector.png" alt="icon">
                                     </div>
                                 </div>
                             </div>
-                           </div>
                         </div>
-                        <!-- Upload section Ends -->
+                        <!-- First section Ends -->
+
+                        <!-- Second section -->
+                        
+                        <!-- Second section Ends -->
+
+                        <!-- Table section -->
+                        <div class="row">
+                            <div class="col-lg-12 open-section">
+                                <h4 class="user-1">
+                                    Add Advert
+                                </h4>
+                                <h4 class="user-1">Export as :  
+                                    <button class="table-button">
+                                        CSV
+                                    </button>
+                                    <button class="table-button">
+                                        PDF
+                                    </button>
+                                    <button class="table-button">
+                                        Print
+                                    </button>
+                                </h4>
+                                <div class="col-lg-12">
+                                    <table border="1" class="open-section-2">
+                                        <tr class="mode-1">
+                                            <th width="50">S/N</th>
+                                            <th>Name of Advert</th>
+                                            <th>Category</th>
+                                            <th>Date </th>
+                                            <th>Price</th>
+                                            <th>Duration</th>
+                                            <th>Add Photos</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        <tr class="mode-2">
+                                            <td>1</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <input type="file">
+                                            </td>
+                                            <td>
+                                                <i class="bi bi-pencil-square info"></i>
+                                                <i class="bi bi-trash info"></i>
+                                            </td>
+                                        </tr>
+                                        <tr class="mode-2">
+                                            <td>2</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <input type="file">
+                                            </td>
+                                            <td>
+                                                <i class="bi bi-pencil-square info"></i>
+                                                <i class="bi bi-trash info"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="view">View all users <i class="bi bi-arrow-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Table section Ends -->
+
+                        <!-- Services -->
+                        
+                        <!-- Services Ends -->
                         <!-- end row -->
                     </div>
                     <!-- end container-fluid -->
@@ -419,4 +427,6 @@
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </body>
+
+
 </html>
